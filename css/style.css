@@ -8511,9 +8511,9 @@ h1, h2, h3, h4, h5,
                 -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
                 right: 0;
-                max-width: 50%;
+                max-width: 43%;
                 padding-left: 45px;
-                padding-right: 3em; } }
+                padding-right: 5em; } }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
           font-weight: 600;
@@ -9051,6 +9051,18 @@ textarea.form-control {
 .ftco-animate {
   opacity: 0;
   visibility: hidden; }
+
+/* Allow vertical swipe/scroll on mobile through the hero slider
+   (fixes the site not scrolling on mobile devices) */
+html, body {
+  overflow-x: hidden; }
+
+.owl-carousel,
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage,
+.owl-carousel .owl-item {
+  touch-action: pan-y !important;
+  -ms-touch-action: pan-y !important; }
 
 .bg-primary {
   background: #ffbd39 !important; }
